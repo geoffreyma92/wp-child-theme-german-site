@@ -114,9 +114,6 @@ blockquote::before {
     border-color: #6e9492 !important;
     font-weight: bold !important;
 }
-.site-info {
-    display: none;
-}
 widget {
     margin: 0;
 }
