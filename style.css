@@ -34,6 +34,9 @@ p {
     line-height: 1.5;
     font-size: 15px;
 }
+#footer-sidebar p {
+  font-size: 11px !important;
+}
 .hentry,
 .drentoCommentList,
 .comments-area,
@@ -123,9 +126,27 @@ widget {
 }
 .btn {
     white-space: normal !important;
+    float: right !important;
 }
-/* Mobile-first styles*/
+#secondary-nav li{
+  display: inline-block;
+  position: relative;
+  float: right;
+}
 
+#secondary-nav li span{
+  color: #8c8c8c;
+}
+
+header.site-header {
+  padding: 0px 0px 0px;
+}
+#secondary-nav>li>a {
+  padding: 10px 5px;
+  font-size: 12px;
+}
+
+/* Mobile-first styles*/
 @media screen and (max-width: 375px) {
     #footer-sidebar p {
         font-size: 10px !important;
