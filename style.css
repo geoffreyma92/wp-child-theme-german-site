@@ -117,23 +117,36 @@ blockquote::before {
 widget {
     margin: 0;
 }
+.smallPart,
+.tagcloud {
+    text-transform: none;
+}
+.btn {
+    white-space: normal !important;
+}
 /* Mobile-first styles*/
 
-@media screen and (max-width: 980px) {
-    .hentry,
-    .drentoCommentList,
-    .comments-area,
-    footer.site-footer,
-    .site-main .posts-navigation,
-    .site-main .navigation.pagination,
-    .content-area .page-content,
-    #disqus_thread {
-        max-width: 100%;
-        margin: 0px auto;
-        padding: 0;
+@media screen and (max-width: 375px) {
+    #footer-sidebar p {
+        font-size: 10px !important;
     }
     blockquote img {
-        min-width: 80%;
-        margin: 0px 1em;
+        width: 100%;
+        padding-right: 40%;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 559px) {
+    .hentry {
+        max-width: 95%;
+    }
+    #footer-sidebar {
+        padding-bottom: 3em
+    }
+    #footer-sidebar p {
+        font-size: 12px;
+    }
+    blockquote::before {
+        font-size: 40px;
     }
 }
